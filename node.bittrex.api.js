@@ -31,7 +31,7 @@ var NodeBittrexApi = function(options) {
     baseUrl: 'https://bittrex.com/api/v1.1',
     baseUrlv2: 'https://bittrex.com/Api/v2.0',
     websockets_baseurl: 'wss://socket.bittrex.com/signalr',
-    websockets_hubs: ['CoreHub'],
+    websockets_hubs: ['coreHub'],
     apikey: 'APIKEY',
     apisecret: 'APISECRET',
     verbose: false,
@@ -292,7 +292,7 @@ var NodeBittrexApi = function(options) {
         },
         connected: function() {
           if (websocketGlobalTickers) {
-            wsclient.call('CoreHub', 'SubscribeToSummaryDeltas').done(function(err, result) {
+            wsclient.call('coreHub', 'SubscribeToSummaryDeltas').done(function(err, result) {
               if (err) {
                 return console.error(err);
               }
@@ -305,7 +305,7 @@ var NodeBittrexApi = function(options) {
 
           if (websocketMarkets.length > 0) {
             websocketMarkets.forEach(function(market) {
-              wsclient.call('CoreHub', 'SubscribeToExchangeDeltas', market).done(function(err, result) {
+              wsclient.call('coreHub', 'SubscribeToExchangeDeltas', market).done(function(err, result) {
                 if (err) {
                   return console.error(err);
                 }

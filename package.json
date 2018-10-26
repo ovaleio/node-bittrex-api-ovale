@@ -1,5 +1,5 @@
 {
-  "name": "node-bittrex-api",
+  "name": "node-bittrex-api-ovale",
   "version": "0.8.3",
   "description": "Node Bittrex API - asynchronous node.js library for the Bittrex API https://bittrex.com/",
   "keywords": [
@@ -21,21 +21,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dparlevliet/node.bittrex.api"
+    "url": "https://github.com/ovaleio/node-bittrex-api-ovale"
   },
   "main": "node.bittrex.api.js",
   "engines": {
     "node": ">=0.10"
   },
   "bugs": {
-    "url": "https://github.com/dparlevliet/node.bittrex.api/issues",
-    "email": "david.parlevliet.github@gmail.com"
+    "url": "https://github.com/ovaleio/node-bittrex-api-ovale/issues",
+    "email": "johnthillaye@gmail.com"
   },
-  "homepage": "https://github.com/dparlevliet/node.bittrex.api",
+  "homepage": "https://github.com/dparlevliet/node-bittrex-api-ovale",
   "scripts": {
     "test": "mocha"
   },
   "devDependencies": {
-    "mocha": "^3.3.0"
+    "mocha": "^3.5.3"
   }
 }
